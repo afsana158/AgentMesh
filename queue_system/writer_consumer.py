@@ -2,8 +2,8 @@ import redis
 import json
 import asyncio
 
-from AgentMesh.queue_system.pubsub import publish_log
-from AgentMesh.agents.writer import writer_agent
+from queue_system.pubsub import publish_log
+from agents.writer import writer_agent
 
 r = redis.Redis(
     host='localhost',

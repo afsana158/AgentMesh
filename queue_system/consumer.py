@@ -3,9 +3,9 @@ import json
 import time
 import asyncio
 
-from AgentMesh.agents.retriever import retriever_agent
-from AgentMesh.agents.analyzer import analyzer_agent
-from AgentMesh.agents.writer import writer_agent
+from agents.retriever import retriever_agent
+from agents.analyzer import analyzer_agent
+from agents.writer import writer_agent
 
 r = redis.Redis(host='localhost', port=6379, decode_responses=True)
 
@@ -53,4 +53,4 @@ async def consumer():
         await asyncio.sleep(1)
 
 
-asyncio.run(consumer())
+asyncio.run(c

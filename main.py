@@ -5,7 +5,7 @@ import redis
 import json
 import asyncio
 
-from AgentMesh.agents.planner import planner_agent
+from agents.planner import planner_agent
     
 app = FastAPI()
 app.add_middleware(
